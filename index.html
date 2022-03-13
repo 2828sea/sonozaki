@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>SONOZAKI CO.LTD</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="" />
+  <!-- GoogleFont -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!-- css -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="./js/script.js"></script>
+  <script defer src="./js/gsap.js"></script>
+
+<body class="js-body">
+  <!-- <div class="p-loading">
+    <div class="p-loading__area" id="loading_box">
+      <div class="p-loading__img"><img class="fadeUp" src="./images/common/header-logo--white.svg" alt=""></div>
+    </div>
+  </div> -->
+    <!--/loading-->
+  <!-- ヘッダー -->
+  <header class="l-header p-header js-header">
+    <div class="p-header__inner">
+      <h1 class="p-header__title">
+        <a href="#" class="p-header__logo p-header__logo--white js-change--white">
+          <img src="./images/common/header-logo--white.svg" alt="">
+        </a>
+        <a href="#" class="p-header__logo p-header__logo--black js-change--black">
+          <img src="./images/common/header-logo--black.svg" alt="">
+        </a>
+      </h1>
+      <!-- PC用のメニュー(スムーススクロールついてます！) SPでは非表示 -->
+      <nav class="p-header__nav u-desktop">
+        <ul class="p-header__item">
+          <li class="p-header__list"><a href="#">トップ<span>TOP</span></a></li>
+          <li class="p-header__list"><a href="#">事業内容<span>SERVICES</span></a></li>
+          <li class="p-header__list"><a href="#">園崎組について<span>ABOUT</span></a></li>
+          <li class="p-header__list"><a href="#">園崎組の実績<span>WORKS</span></a></li>
+          <li class="p-header__list"><a href="#">採用情報<span>RECRUIT</span></a></li>
+          <li class="p-header__list"><a href="#">お問い合わせ<span>CONTACT</span></a></li>
+        </ul>
+      </nav>
+      <!-- ここまでPC用のメニュー -->
+    </div>
+
+    <!-- スマホサイズでハンバーガーメニュー(分かりやすいように別々にしてますが、PCと共通で作ることも可)PCでは非表示-->
+    <div class="p-hamburger js-hamburger u-mobile">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="p-globalMenuSp js-globalMenuSp">
+      <ul id="menu">
+        <li class="p-globalMenuSp__link">
+          <a href="#">トップ<span>TOP</span></a>
+        </li>
+        <li class="p-globalMenuSp__link">
+          <a href="#">事業内容</a>
+        </li>
+        <li class="p-globalMenuSp__link">
+          <a href="#">園崎組について</a>
+        </li>
+        <li class="p-globalMenuSp__link">
+          <a href="#">園崎組の実績</a>
+        </li>
+        <li class="p-globalMenuSp__link">
+          <a href="#">採用情報</a>
+        </li>
+        <li class="p-globalMenuSp__link">
+          <a href="#">お問い合わせ</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- ここまでハンバーガーメニュー -->
+  </header>
+
+  <main>
+    <div class="l-mv p-mv js-mv">
+      <div class="p-mv__slider p-mv-slider js-mv-slider swiper">
+        <div class="p-mv-slider__wrapper swiper-wrapper">
+          <picture class="p-mv-slider__img swiper-slide">
+            <source srcset="./images/common/top-image-1-pc.png" media="(min-width: 768px)" /><!-- ○○px以上で表示する画像 -->
+            <img src="./images/common/top-image-1.png" alt="トップ画像１">
+          </picture>
+          <picture class="p-mv-slider__img swiper-slide">
+            <source srcset="./images/common/top-image-2-pc.png" media="(min-width: 768px)" /><!-- ○○px以上で表示する画像 -->
+            <img src="./images/common/top-image-2.png" alt="トップ画像2">
+          </picture>
+          <picture class="p-mv-slider__img swiper-slide">
+            <source srcset="./images/common/top-image-3-pc.png" media="(min-width: 768px)" /><!-- ○○px以上で表示する画像 -->
+            <img src="./images/common/top-image-3.png" alt="トップ画像3">
+          </picture>
+        </div>
+      </div>
+      <!-- .p-mv-slider -->
+      <div class="p-mv__inner l-inner">
+        <div class="p-mv__head js-mv__head">
+          <div class="p-mv__title">CHALLENGE<br>FROM<br><span>&nbsp;</span>THE<br class="u-desktop"><span>&nbsp;</span>BOTTOM</div>
+          <div class="p-mv__box">
+            <div class="p-mv__subtitle"><span>社会の基礎を支え</span></div>
+            <div class="p-mv__subtitle"><span>基礎から世界を変革する会社</span></div>
+          </div>
+          <!-- /.p-mv__box -->
+        </div>
+        <!-- /.p-mv__head -->
+      </div>
+    </div>
+
+    <div class="l-news p-news js-news">
+      <div class="p-news__inner l-inner">
+        <a href="#" class="p-news__contents">
+          <div class="p-news__title">NEWS</div>
+          <div class="p-news__content">
+            <time class="p-news__date">2021.06.12</time>
+            <div class="p-news__label">お知らせ</div>
+            <div class="p-news__text">新サイトを公開しました。</div>
+          </div>
+          <span class="p-news__arrow u-desktop"></span>
+          <!-- /.p-news__content -->
+        </a>
+        <!-- /.p-news__contents -->
+      </div>
+      <!-- /.p-news__inner -->
+    </div>
+    <!-- /.l-news -->
+
+    <section class="l-services p-services js-services">
+      <div class="p-services__contents">
+        <div class="p-services__img js-services-img">
+          <img src="./images/common/services-image.png" alt="">
+        </div>
+        <!-- /.p-services__img -->
+        <div class="p-services__inner l-inner">
+          <div class="p-services__content">
+            <div class="p-services__head p-section-head">
+              <div class="p-services__enTitle p-section-head--enTitle">SERVICES</div>
+              <div class="p-services__slash p-section-head--slash"></div>
+              <h2 class="p-services__title p-section-head--title">事業内容</h2>
+            </div>
+            <!-- /.p-section-head -->
+            <div class="p-services__copy">人々の生活基盤を</div>
+            <div class="p-services__copy">世界最高峰の技術で支える</div>
+            <p class="p-services__text">私達のモットーは、 「社会基盤から世界をより良くする」こと。<br class="u-desktop">
+              そのために最前線で国家規模のプロフェクトに参画することもあれば、世界各国の技術者、研究者と共に次世代の建設機材の研究開発事業も同時に行うことで、業界の進化の促進を担っています。</p>
+            <div class="p-services__btn">
+              <a href="#" class="c-button">事業内容を更に知る<span></span></a>
+            </div>
+          </div>
+          <!-- /.p-services__content -->
+        </div>
+        <!-- /.p-services__inner -->
+      </div>
+      <!-- /.p-services__contents -->
+    </section>
+
+    <section class="l-about p-about js-about">
+      <div class="p-about__contents">
+        <picture class="p-about__img">
+          <source srcset="./images/common/image-about-pc.jpg" media="(min-width: 768px)" /><!-- 768px以上で表示する画像 -->
+          <img src="./images/common/image-about.jpg" alt="">
+        </picture>
+        <!-- /.p-about__img -->
+        <div class="p-about__card js-about-card">
+          <div class="p-about__head p-section-head">
+            <div class="p-about__enTitle p-section-head--enTitle">ABOUT</div>
+            <div class="p-about__slash p-section-head--slash"></div>
+            <h2 class="p-about__title p-section-head--title">園崎組について</h2>
+          </div>
+          <!-- /.p-section-head -->
+          <p class="p-about__text">園崎組は埼玉県秩父市にて、主に土木工事にて社会基盤を支える企業になります。
+            <br>また、自社工場において施工に必要とされる各種資材も生産しており、各業者に提供することで、社会基準の構築・整備に貢献しております。</p>
+          <div class="p-about__btn">
+            <a href="#" class="c-button">詳しく見る<span></span></a>
+          </div>
+          <div class="p-about__pic">
+            <img src="./images/common/image-about-card.jpg" alt="">
+          </div>
+        </div>
+        <!-- /.p-about__card -->
+      </div>
+      <!-- /.p-about__contents -->
+    </section>
+
+    <section class="l-works p-works js-works">
+      <div class="p-works__inner l-inner">
+        <div class="p-works__head p-section-head">
+          <div class="p-works__enTitle p-section-head--enTitle">WORKS</div>
+          <div class="p-works__slash p-section-head--slash"></div>
+          <h2 class="p-works__title p-section-head--title">園崎組の実績</h2>
+        </div>
+        <!-- /.p-section-head -->
+        <div class="p-works__copy">社会を基礎から、<br class="u-mobile">変革してきたプロジェクト</div>
+        <p class="p-works__text">創業以來より培われた確かな技術力で社会を変革する様々な案件を手掛けてきました。<br class="u-dekstop">その一部を紹介させていただきます。</p>
+      </div>
+      <div class="p-works__contents">
+        <a href="#" class="p-works__content p-card js-works-card">
+          <div class="p-card__img">
+            <img src="./images/common/image-works01.jpg" alt="">
+            <span>01</span>
+          </div>
+          <div class="p-card__body">
+            <h3 class="p-card__title">施工実績</h3>
+            <p class="p-card__text">東南アジア某国での国家規模のプロジェクトに参画した際の園崎組のプロジェクトストーリーを記載しています。</p>
+          </div>
+          <!-- /.p-card__body -->
+        </a>
+        <!-- /.p-works__content -->
+        <a href="#" class="p-works__content p-card js-works-card">
+          <div class="p-card__img">
+            <img src="./images/common/image-works02.jpg" alt="">
+            <span>02</span>
+          </div>
+          <div class="p-card__body">
+            <h3 class="p-card__title">商品納入実績</h3>
+            <p class="p-card__text">土木・建設資材のプロフェッショナルとして、現場で必要となる各種資材を提供しています。</p>
+          </div>
+          <!-- /.p-card__body -->
+        </a>
+        <!-- /.p-works__content -->
+      </div>
+      <!-- /.p-works__contents -->
+      <div class="p-works__btn">
+        <a href="#" class="c-button">実績一覧を見る<span></span></a>
+      </div>
+    </section>
+
+    <section class="l-recruit p-recruit js-recruit">
+      <div class="p-recruit__head p-section-head">
+        <div class="p-recruit__enTitle p-section-head--enTitle">RECRUIT</div>
+        <div class="p-recruit__slash p-section-head--slash"></div>
+        <h2 class="p-recruit__title p-section-head--title">採用情報</h2>
+      </div>
+      <!-- /.p-section-head -->
+      <div class="p-recruit__contents">
+        <a href="#" class="p-recruit__img js-recruit-img">
+          <img src="./images/common/image-recruit-1.jpg" alt="">
+          <div class="p-recruit__text">
+            <span>園崎組を知る<span></span></span>
+          </div>
+          <!-- /.p-recruit__text -->
+        </a>
+        <a href="#" class="p-recruit__img js-recruit-img">
+          <img src="./images/common/image-recruit-2.jpg" alt="">
+          <div class="p-recruit__text">
+            <span>園崎組の一日<span></span></span>
+          </div>
+          <!-- /.p-recruit__text -->
+        </a>
+        <a href="#" class="p-recruit__img js-recruit-img">
+          <img src="./images/common/image-recruit-3.jpg" alt="">
+          <div class="p-recruit__text">
+            <span>求める人物像<span></span></span>
+          </div>
+          <!-- /.p-recruit__text -->
+        </a>
+      </div>
+      <!-- /.p-recruit__contents -->
+      <div class="p-recruit__btn">
+        <a href="#" class="c-button">エントリー一覧はこちら<span></span></a>
+      </div>
+    </section>
+
+    <section class="l-contact p-contact">
+      <div class="p-contact__inner l-inner">
+        <div class="p-contact__head p-section-head">
+          <div class="p-contact__enTitle p-section-head--enTitle">CONTACT</div>
+          <div class="p-contact__slash p-section-head--slash"></div>
+          <h2 class="p-contact__title p-section-head--title">お問い合わせ</h2>
+        </div>
+        <!-- /.p-section-head -->
+        <div class="p-contact__text">園崎組では一般的な施工から特注部品、機械の開発・製造まで一貫して対応しております。<br class="u-desktop">お気軽にご連絡ください。</div>
+        <div class="p-contact__box">
+          <div class="p-contact__btn">
+            <a href="#" class="c-button c-button--orange">施工のご相談<span></span></a>
+          </div>
+          <div class="p-contact__btn">
+            <a href="#" class="c-button c-button--black">特注制作のご相談<span></span></a>
+          </div>
+        </div>
+        <!-- /.p-contact__box -->
+      </div>
+      <!-- /.p-contact__inner -->
+    </section>
+
+    <footer class="l-footer p-footer">
+      <div class="p-footer__inner l-inner">
+        <nav class="p-footer__nav">
+          <ul class="p-footer__item">
+            <li class="p-footer__list"><a href="#">トップ</a></li>
+            <li class="p-footer__list"><a href="#">事業内容</a></li>
+            <li class="p-footer__list"><a href="#">園崎組について</a></li>
+            <li class="p-footer__list"><a href="#">園崎組の実績</a></li>
+            <li class="p-footer__list"><a href="#">採用</a></li>
+            <li class="p-footer__list"><a href="#">お問い合わせ</a></li>
+          </ul>
+        </nav>
+
+        <div class="p-footer__content">
+          <a href="#" class="p-footer__logo">
+            <img src="./images/common/header-logo--white.svg" alt="">
+          </a>
+          <div class="p-footer__box">
+            <div class="p-footer__company">株式会社園崎組</div>
+            <div class="p-footer__address">〒000-000<br class="u-desktop"><span class="u-desktop u-mb24"></span>埼玉県秩父市×××××××</div>
+            <div class="p-footer__tel">TEL 0494-00-0000</div>
+            <div class="p-footer__fax">FAX 000-0000-0000</div>
+          </div>
+        </div>
+        <!-- /.p-footer__content -->
+      </div>
+      <!-- /.p-footer__inner -->
+    </footer>
+
+    <div class="p-copy-right">
+      <div class="p-copy-right__inner l-inner">
+        <small>
+          Copyright © SONOZAKI CO.LTD All Rights Reserved.
+        </small>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

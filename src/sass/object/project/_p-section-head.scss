@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.p-section-head {
+  display: flex;
+  align-items: baseline;
+}
+
+.p-section-head--title {
+  font-size: rem(20);
+  line-height: 1;
+  color: #4b6cb7;
+  font-weight: $medium;
+  @include mq(md){
+    font-size: rem(24);
+  }
+}
+
+.p-section-head--slash {
+  width: rem(17);
+  height: rem(18);
+  // background-color: #4b6cb7;
+  border-left: 2px solid #4b6cb7;
+  display: inline-block;
+  transform: skewX(-40deg);
+  margin-left: rem(15);
+  display: flex;
+  align-items: flex-end;
+  @include mq(md){
+    width: rem(23);
+    height: rem(26);
+  }
+}
+
+
+.p-section-head--enTitle {
+  font-size: rem(32);
+  line-height: 1;
+  font-family: $sub-font-family;
+  font-weight: $bold;
+  line-height: 0.7;
+  @include mq(md){
+    font-size: rem(48);
+  }
+}

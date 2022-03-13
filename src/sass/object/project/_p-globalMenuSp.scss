@@ -1,0 +1,59 @@
+@use "global" as *;
+
+
+// **********************************
+//  /* ナビメニュー内 */
+// **********************************
+.p-globalMenuSp {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background: $main;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding-top: calc(#{rem(56)} + #{rem(60)});
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  visibility: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.p-globalMenuSp ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+.p-globalMenuSp__link {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  transition: 0.4s all;
+}
+.p-globalMenuSp__link:last-child {
+  padding-bottom: 0;
+}
+
+.p-globalMenuSp__link a {
+  display: block;
+  color: #fff;
+  padding: rem(19) 0;
+  text-decoration: none;
+  font-size: rem(20);
+}
+
+.p-globalMenuSp__link a span {
+  display: block;
+  font-size: rem(14);
+  font-family: $sub-font-family;
+}
+
+/* ハンバーガーメニュー押してactiveクラスを付いたら表示する */
+nav.p-globalMenuSp.active {
+  opacity: 1;
+  visibility: visible;
+}

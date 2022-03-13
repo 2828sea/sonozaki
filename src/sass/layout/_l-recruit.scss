@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.l-recruit {
+  margin-top: rem(120);
+  @include mq(md){
+    padding: rem(81) 0 rem(80);
+    margin-top: rem(155);
+  }
+}

@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.c-button {
+  max-width: rem(256);
+  width: 100%;
+  padding: rem(15);
+  text-align: center;
+  color: #fff;
+  background-color: $main;
+  font-size: rem(14);
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include mq(md){
+    padding: rem(24) 0;
+    font-size: rem(16);
+  }
+}
+
+.c-button--orange {
+  background-color: #b8614b;
+}
+
+.c-button--black {
+  background-color: #191919;
+}
+
+.c-button span {
+  width: rem(16);
+  height: rem(4);
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: skew(45deg);
+  margin-left: rem(18);
+}

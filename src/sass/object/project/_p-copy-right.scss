@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.p-copy-right {
+  padding: rem(15) 0;
+  background-color: #191919;
+  @include mq(md){
+    padding: rem(24) 0;
+  }
+}
+
+.p-copy-right small {
+  font-size: rem(10);
+  line-height: 1;
+  color: #fff;
+  display: block;
+  @include mq(md){
+    font-size: rem(12);
+  }
+}
